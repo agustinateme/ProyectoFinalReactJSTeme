@@ -1,0 +1,212 @@
+.DetailBrand {
+    font-weight: bold;
+}
+.DetailPrice {
+    font-weight: bold;
+}
+.GreenText {
+    color: green;
+}
+
+.RedText {
+    color: red;
+}
+.DetailDescription {
+    margin-top: 2rem;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    
+}
+.DetailDescription--title {
+    color:#8dbdb8;
+    font-weight: bold;
+}
+
+.payments {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.payments-u {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#hr {
+    margin: 5px;
+}
+.card-info {
+    margin: 0;
+}
+
+
+.elem-title, #offcanvasALabel, #offcanvasBLabel2 {
+    font-weight: bold;
+    color: #8dbdb8;
+}
+.DetailNames {
+    cursor: pointer;
+}
+.DetailNames:hover {
+    color: rgb(153, 153, 153);
+}
+.DetailOffCanvas {
+    margin-top: 2rem;
+}
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    
+    .DetailImg {
+        display: none;
+    }
+    .DetailImgPhone {
+        margin-top: 1rem;
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        aspect-ratio: 1/1;
+        max-width: 100%;
+    }
+
+    .carousel-img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: contain;
+    }
+    
+    .DetailContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: max-content;
+        margin: 0 2rem;
+    }
+    .DetailLinks {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        
+    }
+    .DetailCat, .symbol {
+        text-decoration: none;
+        color: #8dbdb8;
+        font-weight: bold;
+    }
+    .DetailCat:hover {
+    color: #9dd9d2;
+    }
+    .DetailInfo {
+        margin-top: 2rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .DetailInfo, .DetailDescription , .elem-subtitle, .changesAndReturns--title, .elem-title, #offcanvasALabel, #offcanvasBLabel2 {
+        font-size: 14px;
+    }
+    .DetailBrand, .DetailStock, .DetailCat, .symbol, .DetailNames, .elem-list li, .card-info  {
+        font-size: 12px;
+    }
+    .DetailDescription--title {
+        font-size: 2rem;
+    }
+
+    .img-card {
+        width: 2.7rem;
+        height: 1.7rem;
+    }
+    .DetailNames {
+        margin-bottom: 10px;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .DetailImgPhone {
+        display: none;
+    }
+    .DetailContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto 1fr 1fr;
+        width: min-content;
+    }
+    .DetailLinks {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-bottom: 1rem;
+    }
+    .DetailCat, .symbol {
+        text-decoration: none;
+        color: #8dbdb8;
+        font-weight: bold;
+    }
+    .DetailCat:hover {
+    color: #9dd9d2;
+    }
+    .DetailImg {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: min-content;
+    }
+    .DetailImg1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        width: 500px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .DetailImg2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 245px;
+        margin-bottom: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .DetailImg3 {
+        margin-top: 5px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 245px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .DetailInfo {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .DetailOffCanvas {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+
+
+    .DetailInfo, .DetailDescription, .elem-subtitle, .changesAndReturns--title, .elem-title, #offcanvasALabel, #offcanvasBLabel2 {
+        font-size: 16px;
+    }
+    .DetailBrand, .DetailStock, .DetailCat, .symbol, .DetailNames, .elem-list li, .card-info {
+        font-size: 14px;
+    }
+    .DetailDescription--title {
+        font-size: 2.5rem;
+    }
+    .img-card {
+        width: 3rem;
+        height: 1.5rem;
+    }
+    .DetailNames {
+        margin: 0.5rem 0 0 2rem;
+    }
+}

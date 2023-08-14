@@ -1,0 +1,96 @@
+.productContainer {
+    gap: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+.btnn{
+    display: inline-block;
+    width: 100%;
+}
+.productInfo--brand, .productInfo--name, .productInfo--price, .productInfo--stock {
+    margin: 5px;
+}
+
+.productInfo {
+    justify-self: start;
+}
+
+.productImg {
+    align-self: center;
+}
+
+.productInfo--name {
+    margin-bottom: 1rem;
+}
+
+.productInfo--price, .productInfo--brand {
+    font-weight: bold;
+}
+
+.productInfo--stock {
+    color: #C81D25;
+}
+
+.productBtn {
+    border: none;
+    align-self: stretch;
+    background-color: #FF5A5F;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.productBtn:hover {
+    background-color: #dd4e53;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .productContainer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 3fr;
+        justify-items: center;
+        align-items: end;
+        font-size: 14px;
+        justify-content: stretch;
+    }
+    .productInfo {
+        justify-self: stretch;
+    }
+    .productBtn {
+        height: 2.5rem;
+        width: 100%;
+        border-radius: 3px;
+    }
+    .productImg {
+        width: 150px;
+    }
+    .productInfo--brand {
+        font-size: 12px;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .productContainer {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: flex-start;
+        font-size: 16px;
+        width: min-content;
+        justify-content: space-between;
+    }
+    .productBtn {
+        height: 2rem;
+        width: 15rem;
+        align-self: center;
+        border-radius: 3px;
+    }
+    .productImg {
+        width: 14rem;
+    }
+    .productInfo--brand {
+        font-size: 14px;
+    }
+}

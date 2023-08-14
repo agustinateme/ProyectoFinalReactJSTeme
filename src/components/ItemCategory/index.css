@@ -1,0 +1,38 @@
+.ItemCategoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.ItemCategoryContainer:hover {
+    transform: scale(1.05);
+}
+
+.ItemCategoryInfo {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .ItemCategoryContainer {
+        width: 144px;
+        height: 180px;
+    }
+    .ItemCategoryInfo {
+        font-size: 20px;
+    }  
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .ItemCategoryInfo {
+        font-size: 25px;
+    }   
+    .ItemCategoryContainer {
+       width: 232px;
+       height: 290px;
+    }
+}

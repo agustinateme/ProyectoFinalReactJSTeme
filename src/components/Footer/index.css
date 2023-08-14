@@ -1,0 +1,95 @@
+.FooterContainer {
+    background: linear-gradient(to bottom, transparent, #FF5A5F);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.Subscribe form{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.Subscribe form input[type="email"] {
+    padding-left: 1rem;
+    border-radius: 3px 0 0 3px;
+}
+.btnSubs {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+}
+.btnSubs:hover {
+    background-color: rgb(31, 31, 31);
+}
+.Subscribe form input[type="email"], .btnSubs {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+}
+.Subscribe form input[type="email"]:focus {
+    outline: none;
+}
+.SocialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.SocialMedia p {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: white;
+}
+
+.SocialLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .socialIcon {
+        width: 2.5rem;
+    }
+    .Subscribe form {
+        margin: 0 2rem;
+        font-size: 14px;
+    }
+    .Subscribe form input[type="email"], .btnSubs {
+        height: 2.5rem;
+    }
+    .SocialMedia p {
+        font-size: 16px;
+    }
+    .btnSubs {
+        padding: 0 1rem;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .socialIcon {
+        width: 3rem;
+    }
+    .Subscribe form {
+        width: 900px;
+        font-size: 16px;
+    }
+    .Subscribe form input[type="email"], .btnSubs {
+        height: 3rem;
+    }
+    .SocialMedia p {
+        font-size: 25px;
+    }
+}

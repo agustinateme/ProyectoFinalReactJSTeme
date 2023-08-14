@@ -1,0 +1,124 @@
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.CheckoutContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.orderMade {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.buySuccessful {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+
+.checkoutForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    background: linear-gradient(to bottom, #8bc2bb, #ff5a60);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: min-content;
+    border-radius: 3px;
+}
+.checkoutForm input {
+    padding: 1rem;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    height: 3rem;
+    width: 25rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.checkoutForm input::placeholder {
+    color: rgba(255, 255, 255, 0.5)
+}
+.submitButton{
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    height: 3rem;
+}
+
+.submitButton:hover, .submitButton:disabled {
+    background-color: rgb(31, 31, 31);
+}
+
+.submitButton:disabled {
+    cursor: not-allowed;
+}
+
+.caution , .goShoppingCheckout{
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.goShoppingCheckout {
+    animation: growShrink 1s infinite;
+}
+.checkoutTitle, .checkoutOrderNum {
+    margin-bottom: 1rem;
+    color: #8bc2bb;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.checkoutSub {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px){
+    .CheckoutContainer {
+        font-size: 14px;
+    }
+    .checkoutForm input {
+        height: 3rem;
+        width: 15rem;
+    }
+    .checkoutTitle {
+        font-size: 20px;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .CheckoutContainer {
+        font-size: 16px;
+    }
+    .checkoutTitle {
+        font-size: 25px;
+    }
+    
+}

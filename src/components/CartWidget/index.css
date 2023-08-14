@@ -1,0 +1,18 @@
+.CartWidgetContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.CartWidgetimg {
+    width: 1.6rem;
+    align-self: flex-start;
+}
+
+.CartWidgetNumber {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}

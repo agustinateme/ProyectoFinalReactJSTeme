@@ -1,0 +1,134 @@
+.CartItemContainer {
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.CartItemContainer p {
+    margin: 0;
+}
+.btnsQuantity {
+    display: flex;
+    flex-direction: row;
+}
+.btnLess, .btnMore, .quantity {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #9DD9D2;
+}
+.btnLess:hover, .btnMore:hover {
+    background-color: #8bc2bb;
+}
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnLess {
+    border-radius: 3px 0 0 3px;
+}
+
+.btnMore {
+    border-radius: 0 3px 3px 0 ;
+}
+.operatorItem {
+    display: flex;
+    flex-direction: column;
+}
+.btnsQuantity {
+    margin-bottom: 0.5rem;
+}
+.operator {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.deleteItem button{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FF5A5F;
+}
+.deleteItem button:hover {
+    color: #C81D25;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .CartItemContainer {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        justify-items: start;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        gap: 0.5rem;
+        font-size: 14px;
+    }
+    .nameItem {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .deleteItem {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+    .imgItem {
+        width: 100px;
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+    .operatorItem {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        align-items: start;
+    }
+    
+    .btnLess, .btnMore {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .quantity {
+        width: 1.7rem;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .CartItemContainer {
+        display: grid;
+        grid-template-columns: auto 2fr 1fr auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        font-size: 16px;
+        gap: 2rem;
+    }
+    .imgItem {
+        width: 100px;
+        grid-column:  1 / 2;
+    }
+    .nameItem {
+        grid-column: 2 / 3;
+    }
+    .operatorItem {
+        grid-column: 3 / 4;
+        align-items: center;
+    }
+    .deleteItem {
+        grid-column: 4 / 5;
+    }
+    .btnLess, .btnMore {
+        width: 2rem;
+        height: 2rem;
+    }
+    .quantity {
+        width: 2rem;
+    }
+}

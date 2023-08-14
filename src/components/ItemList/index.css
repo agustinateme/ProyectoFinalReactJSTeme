@@ -1,0 +1,21 @@
+.ListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .ListContainer {
+        flex-direction: column;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .ListContainer{
+        flex-direction: row;
+    }
+}

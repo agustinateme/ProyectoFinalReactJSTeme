@@ -1,0 +1,95 @@
+.CountContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.Count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: #9DD9D2;
+}
+
+.CountBuy {
+    border: none;
+    align-self: stretch;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.CountBuy:disabled {
+    background-color: rgb(53, 53, 53);
+    cursor:not-allowed;
+}
+
+.CountBuy:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.Count--btn {
+    border: none;
+    background-color: #9DD9D2;
+    color: white;
+    cursor: pointer;
+}
+
+.Count--btn:hover {
+    background-color: #8bc2bb;
+}
+
+.Count--cant {
+    color: white;
+}
+
+.notAvaible {
+    font-weight: bold;
+    color: #C81D25;
+}
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .Count--cant, .Count--btn, .CountBuy {
+        font-size: 16px;
+    }
+    .Count, .Count--btn {
+        height: 1.5rem;
+        border-radius: 3px;
+    }
+    .Count--btn {
+        width: 1.5rem;
+    }
+    .CountBuy {
+        height: 2rem;
+    }
+    .notAvaible {
+        font-size: 18px; 
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .Count--cant,.Count--btn, .CountBuy {
+        font-size: 18px;
+    }
+    .CountContainer {
+        width: 20rem;
+    }
+    .Count, .Count--btn {
+        height: 2rem;
+        border-radius: 3px;
+    }
+    .Count--btn {
+        width: 2rem;
+    }
+    .CountBuy {
+        height: 2.5rem;
+    }
+    .notAvaible {
+        font-size: 20px; 
+    }
+}

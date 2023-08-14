@@ -1,0 +1,32 @@
+.CategoryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+.newitems, .categoriesItems{
+    color: #8bc2bb;
+    font-weight: bold;
+    text-align: center;
+}
+.newitems {
+    margin: 2rem 0;
+}
+.categoriesItems {
+    margin-bottom: 2rem;
+}
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .newitems, .categoriesItems {
+        font-size: 20px;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .newitems, .categoriesItems {
+        font-size: 25px;
+    }
+}

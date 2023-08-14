@@ -1,0 +1,85 @@
+.CartItemListContainer {
+    margin: 2rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.CartItemListTotal, .title {
+    margin-bottom: 1rem;
+    color: #8bc2bb;
+    font-weight: bold;
+}
+.CartItemListBtns {
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.empty {
+    border: none;
+    background-color: #FF5A5F;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.goShopping:hover, .empty:hover {
+    background-color: #C81D25;
+}
+.finish {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.finish:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.CartEmpty {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.goShopping {
+    text-decoration: none;
+    border: none;
+    background-color: #FF5A5F;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.CartEmpty p {
+    margin: 0;
+}
+
+/*RESPONSIVE PHONE*/
+@media only screen and (max-width: 1023px) {
+    .CartEmpty:not(.goShopping) {
+        font-size: 14px;
+    }
+    .title{
+        font-size: 18px;
+    }
+}
+
+/*RESPONSIVE DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .CartEmpty:not(.goShopping) {
+        font-size: 16px;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+
